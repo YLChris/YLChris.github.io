@@ -165,38 +165,22 @@
 <h6 id="2-5-在-YLChris-目录下执行命令-‘hexo-n’新建一篇-blog-进入该blog目录-并用-md-工具比如-typora-编辑该文章"><a href="#2-5-在-YLChris-目录下执行命令-‘hexo-n’新建一篇-blog-进入该blog目录-并用-md-工具比如-typora-编辑该文章" class="headerlink" title="2.5 在 YLChris 目录下执行命令 ‘hexo n’新建一篇 blog, 进入该blog目录, 并用 md 工具比如(typora) 编辑该文章"></a>2.5 在 YLChris 目录下执行命令 ‘hexo n’新建一篇 blog, 进入该blog目录, 并用 md 工具比如(typora) 编辑该文章</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">E:\Programming\YLChris&gt;hexo n &quot;使用hexo搭建个人博客&quot;</span><br></pre></td></tr></table></figure>
 <p>INFO  Created: E:\Programming\YLChris\source_posts\使用hexo搭建个人博客.md</p>
 <blockquote>
-<blockquote>
 <p>可以发现该source目录下被新建了一个 文件及文件夹 使用hexo搭建个人博客.md<br>在该文件中存放图片, 并在 md文件中引用即可 </p>
 </blockquote>
-</blockquote>
-<img src="使用hexo搭建个人博客/xunlei.png" style="zoom:50%;" />
-###### 2.6 然后重新回到 YLChris 目录, 清理一下目录
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-###### 2.7 重新生成
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-###### 2.8 再次重启, 预览即可看到
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s </span><br></pre></td></tr></table></figure>
-3.将 blog 部署到 github 个人主页上
-###### 3.1 在 YLChris 目录下安装 hexo-deployer-git
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-###### 3.2 编辑 zx-hexo 目录下的 _config.yml 文件, 在文件末尾添加如下内容
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/abc/abc.github.io.git</span><br><span class="line">  branch: master  #对应分支名</span><br></pre></td></tr></table></figure>
-其中 repo 中的内容即为 github 个人主页链接地址, 关于如何创建 github 个人主页, 可自行百度即可
-###### 3.3 在 YLChris 目录下, 将本地 blog 推送到 git 仓, 可能需要输入 username & pwd
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-###### 3.4 推送成功后, 在浏览器中输入对应域名, 即可访问
-https://abc.github.io
-4.更换主题
-###### 4.1 假设要更换的主题是 maupassant
-https://www.haomwei.com/technology/maupassant-hexo.html
-###### 4.2 在 YLChris 目录下, 依次执行命令:
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</span><br><span class="line">cnpm install hexo-renderer-pug --save</span><br><span class="line">cnpm install hexo-renderer-sass --save</span><br></pre></td></tr></table></figure>
-###### 4.3 编辑 YLChris 目录下的 _config.yml 文件, 将theme的值改为maupassant
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: maupassant</span><br></pre></td></tr></table></figure>
-###### 4.4 依次执行命令
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g </span><br><span class="line">hexo d </span><br></pre></td></tr></table></figure>
-###### 4.5 再次在浏览器中输入对应域名, 即可发现主题已更换(可能会有几分钟延迟)
-https://abc.github.io
+<h6 id="2-6-然后重新回到-YLChris-目录-清理一下目录"><a href="#2-6-然后重新回到-YLChris-目录-清理一下目录" class="headerlink" title="2.6 然后重新回到 YLChris 目录, 清理一下目录"></a>2.6 然后重新回到 YLChris 目录, 清理一下目录</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<h6 id="2-7-重新生成"><a href="#2-7-重新生成" class="headerlink" title="2.7 重新生成"></a>2.7 重新生成</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<h6 id="2-8-再次重启-预览即可看到"><a href="#2-8-再次重启-预览即可看到" class="headerlink" title="2.8 再次重启, 预览即可看到"></a>2.8 再次重启, 预览即可看到</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s </span><br></pre></td></tr></table></figure>
+<p>3.将 blog 部署到 github 个人主页上</p>
+<h6 id="3-1-在-YLChris-目录下安装-hexo-deployer-git"><a href="#3-1-在-YLChris-目录下安装-hexo-deployer-git" class="headerlink" title="3.1 在 YLChris 目录下安装 hexo-deployer-git"></a>3.1 在 YLChris 目录下安装 hexo-deployer-git</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<h6 id="3-2-编辑-zx-hexo-目录下的-config-yml-文件-在文件末尾添加如下内容"><a href="#3-2-编辑-zx-hexo-目录下的-config-yml-文件-在文件末尾添加如下内容" class="headerlink" title="3.2 编辑 zx-hexo 目录下的 _config.yml 文件, 在文件末尾添加如下内容"></a>3.2 编辑 zx-hexo 目录下的 _config.yml 文件, 在文件末尾添加如下内容</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/abc/abc.github.io.git</span><br><span class="line">  branch: master  #对应分支名</span><br></pre></td></tr></table></figure>
+<p>其中 repo 中的内容即为 github 个人主页链接地址, 关于如何创建 github 个人主页, 可自行百度即可</p>
+<h6 id="3-3-在-YLChris-目录下-将本地-blog-推送到-git-仓-可能需要输入-username-amp-pwd"><a href="#3-3-在-YLChris-目录下-将本地-blog-推送到-git-仓-可能需要输入-username-amp-pwd" class="headerlink" title="3.3 在 YLChris 目录下, 将本地 blog 推送到 git 仓, 可能需要输入 username &amp; pwd"></a>3.3 在 YLChris 目录下, 将本地 blog 推送到 git 仓, 可能需要输入 username &amp; pwd</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h6 id="3-4-推送成功后-在浏览器中输入对应域名-即可访问"><a href="#3-4-推送成功后-在浏览器中输入对应域名-即可访问" class="headerlink" title="3.4 推送成功后, 在浏览器中输入对应域名, 即可访问"></a>3.4 推送成功后, 在浏览器中输入对应域名, 即可访问</h6><p><a target="_blank" rel="noopener" href="https://abc.github.io/">https://abc.github.io</a><br>4.更换主题</p>
+<h6 id="4-1-假设要更换的主题是-maupassant"><a href="#4-1-假设要更换的主题是-maupassant" class="headerlink" title="4.1 假设要更换的主题是 maupassant"></a>4.1 假设要更换的主题是 maupassant</h6><p><a target="_blank" rel="noopener" href="https://www.haomwei.com/technology/maupassant-hexo.html">https://www.haomwei.com/technology/maupassant-hexo.html</a></p>
+<h6 id="4-2-在-YLChris-目录下-依次执行命令"><a href="#4-2-在-YLChris-目录下-依次执行命令" class="headerlink" title="4.2 在 YLChris 目录下, 依次执行命令:"></a>4.2 在 YLChris 目录下, 依次执行命令:</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</span><br><span class="line">cnpm install hexo-renderer-pug --save</span><br><span class="line">cnpm install hexo-renderer-sass --save</span><br></pre></td></tr></table></figure>
+<h6 id="4-3-编辑-YLChris-目录下的-config-yml-文件-将theme的值改为maupassant"><a href="#4-3-编辑-YLChris-目录下的-config-yml-文件-将theme的值改为maupassant" class="headerlink" title="4.3 编辑 YLChris 目录下的 _config.yml 文件, 将theme的值改为maupassant"></a>4.3 编辑 YLChris 目录下的 _config.yml 文件, 将theme的值改为maupassant</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: maupassant</span><br></pre></td></tr></table></figure>
+<h6 id="4-4-依次执行命令"><a href="#4-4-依次执行命令" class="headerlink" title="4.4 依次执行命令"></a>4.4 依次执行命令</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g </span><br><span class="line">hexo d </span><br></pre></td></tr></table></figure>
+<h6 id="4-5-再次在浏览器中输入对应域名-即可发现主题已更换-可能会有几分钟延迟"><a href="#4-5-再次在浏览器中输入对应域名-即可发现主题已更换-可能会有几分钟延迟" class="headerlink" title="4.5 再次在浏览器中输入对应域名, 即可发现主题已更换(可能会有几分钟延迟)"></a>4.5 再次在浏览器中输入对应域名, 即可发现主题已更换(可能会有几分钟延迟)</h6><p><a target="_blank" rel="noopener" href="https://abc.github.io/">https://abc.github.io</a></p>
 
                     
                     <!-- Tags Bottom -->
